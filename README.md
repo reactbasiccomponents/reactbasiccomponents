@@ -4,8 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## currently ready
 	|
-	|-->Multi select text box 	
-
+	|-->Multi select text box 
+	|
+	|-->Editable Text Panel	
+	|
+	|
 ## comming soon
 	|
 	|-->lazy loading lists
@@ -31,7 +34,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 		|-->Area
 
 	|
-	|-->anything else that pos to my mind
+	|-->anything else that comes to my mind
 
 ## ps: this project is going to look ugly
 	
