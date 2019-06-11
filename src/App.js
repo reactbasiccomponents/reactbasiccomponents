@@ -1,7 +1,7 @@
 import React from 'react';
 import MultilineSelect from './components/multilineSelect';
 import './App.css';
-
+import EditableTextPanel from './components/editableTextArea'
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -25,6 +25,7 @@ class App extends React.Component {
   ];
     return (<div>
       <MultilineSelect defaultOptions={courses}/>
+      <EditableTextPanel text='salkjd asdlkj asdlkkjas aslkdkj aslkdjsa asdjsj s ' />
     </div>  );
   }
 }

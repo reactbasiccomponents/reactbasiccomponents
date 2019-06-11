@@ -19,13 +19,13 @@ class CustomTextbox extends React.Component {
     if (this.props.defaultOptions !== null) {
       const elements = this.props.defaultOptions.map(element => element.label);
       this.setState({ elements });
-      console.log('element in state are ', elements);
+      //console.log('element in state are ', elements);
     }
   }
 
  
   handleSubmit(e) {
-    console.log('submit');
+    //console.log('submit');
     // console.log(e.target)
     // let selectedelements=[...this.state.selectedelements,this.state.value]
     // this.setState({selectedelements});
@@ -34,7 +34,7 @@ class CustomTextbox extends React.Component {
   }
 
   handleChange(e) {
-    console.log('change handler called');
+    //console.log('change handler called');
     let { selectedelements } = this.state;
     let { elements } = this.state;
     let isValueAdded = false;
@@ -44,7 +44,7 @@ class CustomTextbox extends React.Component {
     ) {
       this.setState({ value: e.target.value });
       selectedelements = [...selectedelements, e.target.value];
-      console.log('on change handler', selectedelements);
+      //console.log('on change handler', selectedelements);
       this.setState({ selectedelements });
       isValueAdded = true;
       // e.target.value="";
@@ -71,7 +71,7 @@ class CustomTextbox extends React.Component {
       }
     );
     const elements = [...this.state.elements, courseName];
-    console.log(selectedelements);
+    //console.log(selectedelements);
     this.setState({ selectedelements });
     this.setState({ elements });
   }
@@ -87,7 +87,7 @@ class CustomTextbox extends React.Component {
       );
     });
     const selectedelementsList = selectedelements.map((selectedCourse) => {
-      console.log('pills generated', selectedCourse);
+      //console.log('pills generated', selectedCourse);
       return <Pill data={selectedCourse} deleteCourse={this.deleteCourse} />;
     });
     return (
